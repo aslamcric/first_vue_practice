@@ -6,17 +6,17 @@ const decrease =()=> count.value --;
 </script>
 
 <template>
-    <hr>
-    <h1>Counter App</h1>
+    <div class="container mt-4">
+        <hr>
+        <h1 class="text-center">Counter App</h1>
 
-    <h2>Value: {{ count }}</h2>
-    <!-- <button @click="count++">++</button>
-    <button @click="count--">--</button> -->
+        <h2 class="text-center">Value: {{ count }}</h2>
 
-
-    <button @click="increase">++</button>
-    <button @click="decrease">--</button>
-
+        <div class="d-flex justify-content-center gap-3 mt-4">
+            <button @click="decrease" class="btn btn-danger">Minus</button>
+            <button @click="increase" class="btn btn-success">Plus</button>
+        </div>
+    </div>
 </template>
 
 <style scoped>

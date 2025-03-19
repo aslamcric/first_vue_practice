@@ -1,11 +1,13 @@
 <template>
-  
+    <div class="container">
+    
     <hr>
     <h1>Student List</h1>
 
     <ol v-html="students">
         
     </ol>
+</div >
     
 </template>
 

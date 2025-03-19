@@ -8,13 +8,33 @@ let person = {
 </script>
 
 <template>
-    <h1>Person Info</h1>
-    <h2>Name: {{ person.name }}</h2>
-    <h2>Name: {{ person.age }}</h2>
-    <h2>Name: {{ person.phone }}</h2>
-    <h2>Name: {{ person.address }}</h2>
-    
+    <div class="container mt-4">
+        <h1 class="text-center mb-4">Personal Info</h1>
+
+        <div class="person-info">
+            <div class="row mb-3">
+                <div class="col-3 fw-bold">Name:</div>
+                <div class="col">{{ person.name }}</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-3 fw-bold">Age:</div>
+                <div class="col">{{ person.age }}</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-3 fw-bold">Phone:</div>
+                <div class="col">{{ person.phone }}</div>
+            </div>
+
+            <div class="row mb-3">
+                <div class="col-3 fw-bold">Address:</div>
+                <div class="col">{{ person.address }}</div>
+            </div>
+        </div>
+    </div>
 </template>
+
 
 <style scoped>
 h1{
